@@ -113,10 +113,7 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_collected')
 
-STATICFILES_STORAGE = env.str(
-    'STATICFILES_STORAGE',
-    default='whitenoise.storage.CompressedManifestStaticFilesStorage'
-)
+STATICFILES_STORAGE = env.str('STATICFILES_STORAGE', default='whitenoise.storage.CompressedManifestStaticFilesStorage')
 
 
 # Media
