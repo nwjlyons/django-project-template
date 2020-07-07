@@ -1,0 +1,9 @@
+django
+django-environ
+django-log-request-id
+gunicorn
+honcho
+ipython
+pip-tools
+psycopg2
+whitenoise
