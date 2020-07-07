@@ -111,7 +111,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, '{{ project_name }}', 'static_collected')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_collected')
 
 STATICFILES_STORAGE = env.str(
     'STATICFILES_STORAGE',
@@ -121,7 +121,7 @@ STATICFILES_STORAGE = env.str(
 
 # Media
 
-MEDIA_ROOT = os.path.join(BASE_DIR, '{{ project_name }}', 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 

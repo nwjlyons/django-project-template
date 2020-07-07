@@ -3,8 +3,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
+from {{ project_name }}.views.pages import IndexPageView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', IndexPageView.as_view()),
 ]
 
 
