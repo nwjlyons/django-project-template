@@ -19,8 +19,6 @@ services:
             - SESSION_COOKIE_SECURE=false
         depends_on:
           - postgres
-        env_file:
-            - .env
         # Explicitly specify process types to avoid honcho running release command
         command: ["honcho", "start", "web"]
     postgres:
