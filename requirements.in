@@ -4,6 +4,7 @@ django-log-request-id
 gunicorn
 honcho
 ipython
+pendulum
 pip-tools
 psycopg2
 whitenoise
