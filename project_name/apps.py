@@ -1,5 +1,5 @@
-from django.apps import AppConfig
+from django import apps
 
 
-class {{ project_name|capfirst }}Config(AppConfig):
+class AppConfig(apps.AppConfig):
     name = '{{ project_name }}'
