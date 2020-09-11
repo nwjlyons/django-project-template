@@ -155,7 +155,7 @@ LOGGING = {
         },
     },
     'loggers': {
-        'logbook': {
+        '{{ project_name }}': {
             'handlers': ['console'],
             'level': env.bool('{{ project_name|upper }}_LOG_LEVEL', default='INFO'),
             'propagate': False,
