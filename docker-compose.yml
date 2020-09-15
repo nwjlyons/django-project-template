@@ -20,7 +20,7 @@ services:
         depends_on:
           - postgres
         # Explicitly specify process types to avoid honcho running release command
-        command: ["honcho", "start", "web"]
+        command: ["honcho", "--no-prefix", "start", "web"]
     postgres:
         image: postgres
         ports:
