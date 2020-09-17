@@ -1,6 +1,7 @@
 django
 django-environ
 django-log-request-id
+django-smalluuid
 gunicorn
 honcho
 ipython
