@@ -10,8 +10,7 @@ click==7.1.2              # via pip-tools
 decorator==4.4.2          # via ipython, traitlets
 django-environ==0.4.5     # via -r requirements.in
 django-log-request-id==1.5.0  # via -r requirements.in
-django-smalluuid==1.2.0   # via -r requirements.in
-django==3.1               # via -r requirements.in, django-log-request-id, django-smalluuid
+django==3.1               # via -r requirements.in, django-log-request-id
 gunicorn==20.0.4          # via -r requirements.in
 honcho==1.0.1             # via -r requirements.in
 ipython-genutils==0.2.0   # via traitlets
@@ -30,8 +29,7 @@ pygments==2.6.1           # via ipython
 python-dateutil==2.8.1    # via pendulum
 pytz==2020.1              # via django
 pytzdata==2020.1          # via pendulum
-six==1.15.0               # via django-smalluuid, pip-tools, python-dateutil, traitlets
-smalluuid==1.1.0          # via django-smalluuid
+six==1.15.0               # via pip-tools, python-dateutil, traitlets
 sqlparse==0.3.1           # via django
 traitlets==4.3.3          # via ipython
 wcwidth==0.2.5            # via prompt-toolkit

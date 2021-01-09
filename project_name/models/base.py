@@ -1,9 +1,10 @@
+import uuid
+
 from django.db import models
-from django_smalluuid.models import SmallUUIDField, uuid_default
 
 
 class AbstractBaseModel(models.Model):
-    id = SmallUUIDField(default=uuid_default(), primary_key=True, editable=False)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 
     class Meta:
         abstract = True
