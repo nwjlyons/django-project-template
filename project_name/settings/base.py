@@ -58,6 +58,9 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
             ],
+            'builtins': [
+                '{{ project_name }}.templatetags.components'
+            ]
         },
     },
 ]

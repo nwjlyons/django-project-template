@@ -8,6 +8,7 @@
     <script src="{% static 'js/index.js' %}" defer></script>
 </head>
 <body>
+{% flash_messages messages=messages %}
 {% block body %}{% endblock %}
 </body>
 </html>
