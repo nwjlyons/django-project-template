@@ -115,7 +115,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_collected')
+STATIC_ROOT = os.path.join(BASE_DIR, '..', 'static')
 
 STATICFILES_STORAGE = env.str('STATICFILES_STORAGE', default='whitenoise.storage.CompressedManifestStaticFilesStorage')
 
@@ -124,7 +124,7 @@ STATICFILES_STORAGE = env.str('STATICFILES_STORAGE', default='whitenoise.storage
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, '..', 'media')
 
 DEFAULT_FILE_STORAGE = env.str('DEFAULT_FILE_STORAGE', default='django.core.files.storage.FileSystemStorage')
 
