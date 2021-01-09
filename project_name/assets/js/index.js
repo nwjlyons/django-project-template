@@ -1,5 +1,7 @@
 import css from "../css/index.css"
 
+import Turbo from "@hotwired/turbo"
+
 import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"
 
